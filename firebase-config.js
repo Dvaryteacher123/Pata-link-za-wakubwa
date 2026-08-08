@@ -4,9 +4,6 @@
 // Google yenyewe inasema ni salama kuwa kwenye frontend, kwa sababu
 // ulinzi wa kweli wa data upo kwenye Firestore Security Rules
 // (angalia firestore.rules), sio kwenye kuficha config hii.
-//
-// PATA CONFIG YAKO: Firebase Console -> Project Settings -> "Your apps"
-// -> Web app (</>) -> SDK setup and configuration
 // =========================================================
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
@@ -34,18 +31,19 @@ import {
   getDocs,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// !!! WEKA CONFIG YAKO YA FIREBASE HAPA CHINI !!!
+// Hizi ni config zako halisi kutoka Firebase Console
 const firebaseConfig = {
-  apiKey: "WEKA_FIREBASE_API_KEY",
-  authDomain: "WEKA_PROJECT_ID.firebaseapp.com",
-  projectId: "WEKA_PROJECT_ID",
-  storageBucket: "WEKA_PROJECT_ID.appspot.com",
-  messagingSenderId: "WEKA_MESSAGING_SENDER_ID",
-  appId: "WEKA_APP_ID",
+  apiKey: "AIzaSyCvQGF9i7EAcUz72-1EriDJzc7Mcxvq-r0",
+  authDomain: "pata-link-za-magroup-whatsapp.firebaseapp.com",
+  projectId: "pata-link-za-magroup-whatsapp",
+  storageBucket: "pata-link-za-magroup-whatsapp.firebasestorage.app",
+  messagingSenderId: "603411167221",
+  appId: "1:603411167221:web:67c1e724e1cc93299c92bc",
+  measurementId: "G-RZJ0E92YF7"
 };
 
-// !!! WEKA URL YA BACKEND YAKO YA RENDER HAPA (baada ya kudeploy) !!!
-export const API_BASE_URL = "https://WEKA-RENDER-DOMAIN-YAKO.onrender.com";
+// URL rasmi ya backend yako kwenye Render kulingana na jina la mradi wako
+export const API_BASE_URL = "https://pata-link-ya-magroup-ya-wakubwa.onrender.com";
 
 export const firebaseApp = initializeApp(firebaseConfig);
 export const auth = getAuth(firebaseApp);
